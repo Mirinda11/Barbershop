@@ -355,36 +355,34 @@
     </section>
 
     <!- - contacts -->
-
+      <!-- 
 <<<<<<< HEAD
       <section class=" booking-contacts">
         <div class="booking-contacts-wrap">
           <div class="booking-wrap">
             <div class="booking " id="contacts">
-=======
+======= -->
       <div class=" booking-contacts">
         <div class="booking-contacts-wrap ">
           <div class="booking-wrap">
-            <section class="booking section" id="contacts">
-              <h2 class="booking-title">Online-booking</h2>
-
->>>>>>> parent of 9a5803f (26.02)
+            <section class="booking " id="contacts">
               <form class="booking-form" name="form" autocomplete="on">
+                <h2 class="booking-title">Online-booking</h2>
                 <div class="form-thumb">
                   <label class="booking_label" for="user_name">
-                    <input class="booking_input" type="text" id="user_name" name="user_name"
+                    <input class="booking_input " type="text" id="user_name" name="user_name"
                       placeholder="must be two words separated by space." required valid minlength="3"
                       pattern="^[a-zA-Z]+\s[a-zA-Z]+$" />
                     <span class="booking-form-label">NAME*</span>
                   </label>
-                  <label class="booking_label" for="user_tel">
-                    <input class=" booking_input" type="tel" name="user_tel" id="user_tel" placeholder="+917*********"
+                  <label class="booking_label label-tel" for="user_tel">
+                    <input class=" booking_input " type="tel" name="user_tel" id="user_tel" placeholder="+917*********"
                       reqired valid pattern="^[+]91(9|8|7)\d{9}$" />
                     <span class="booking-form-label">PHONE*</span>
                   </label>
                 </div>
-                <label class="booking_label comments" for="user_messege">
-                  <textarea class=" booking_input comments" id="user_messege" name="user_message" rows="1" cols="50"
+                <label class="booking_label" for="user_messege">
+                  <textarea class=" booking_input comments" id="user_messege" name="user_message" rows="1" cols="40"
                     minlength="10" maxlength="100" placeholder=""></textarea>
                   <span class="booking-form-label">MESSAGE</span>
                 </label>
@@ -394,10 +392,10 @@
               </form>
             </section>
 
-            <div class="contacts">
-              <section class="contacts-wrap section">
+            <section class="contacts">
+              <div class="contacts-wrap">
                 <h2 class="contacts-title">Contacts</h2>
-                <address class="contacts-address">
+                <div class="contacts-address">
                   <ul class="contacts-list">
                     <li class="contacts-item">
                       <svg class="icon-contact icon-map" width="24" height="24">
@@ -422,11 +420,11 @@
                       <a class="contacts-link" href="mailto:barbershop@email.com">barbershop@email.com</a>
                     </li>
                   </ul>
-                </address>
+                </div>
                 <p class="contact-text">Working hours</p>
                 <p class="contact-info">Every day from 9:00 to 22:00</p>
-              </section>
-            </div>
+              </div>
+            </section>
           </div>
 
 
