@@ -892,8 +892,6 @@ button {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  /* justify-content: center;
-  align-content: flex-end; */
   gap: 30px;
 }
 
@@ -906,9 +904,6 @@ button {
   align-items: flex-end;
   margin-top: 120px;
   justify-content: flex-start;
-  /* margin-top: 130px; */
-  /* align-items: flex-start;
-  justify-content: flex-start; */
 }
 
 .booking-title {
@@ -924,13 +919,11 @@ button {
 /*        form */
 
 .booking-form {
-  /* margin-top: 40px; */
 }
 
 .booking_label {
   display: block;
   width: 270px;
-  /* position: absolute; */
 }
 
 .booking-form-label {
@@ -943,14 +936,7 @@ button {
   letter-spacing: 0.1em;
 
   color: rgba(157, 164, 189, 0.4);
-  /* position: relative; */
 }
-
-/* .booking-form-label::before {
-  content: "";
-  display: block;
-} */
-
 .booking_input:hover,
 .booking_label:hover,
 .booking-form-label:hover,
@@ -981,7 +967,6 @@ button {
   gap: 30px;
   margin-bottom: 50px;
   margin-top: 40px;
-  /* position: absolute; */
 }
 
 .comments {
@@ -993,28 +978,11 @@ button {
 
 .booking-button .form-btn {
   display: block;
-
-  /* margin-top: 80px; */
 }
 
 .form-btn {
-  /* margin-top: 40px; */
   position: relative;
   top: 105px;
-}
-
-/* .label-name {
-  position: absolute;
-} */
-
-.input-name {
-  /* position: relative; */
-}
-
-.label-tel {
-  /* position: absolute; */
-  /* position: relative; */
-  bottom: 40px;
 }
 
 /*                        contacts */
