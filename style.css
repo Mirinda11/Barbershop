@@ -606,10 +606,12 @@ button {
     #171a24 0%,
     rgba(23, 26, 36, 0.2) 100%
   );
+  padding: 30px 20px 30px 20px;
 }
 
 .services-info-second {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  padding: 30px 20px 30px 20px;
 }
 
 .services-text {
@@ -643,8 +645,17 @@ button {
 
 .table-price {
   text-align: right;
-  /* max-width: 124px;
-  width: 100%; */
+  /* max-width: 124px; */
+  /* width: 100%;  */
+}
+
+.table-text::before {
+  content: "";
+  position: relative;
+  width: 100px;
+  height: 1px;
+  color: #555555;
+  background-color: #555555;
 }
 
 /*                         benefits */
@@ -895,6 +906,12 @@ button {
   gap: 30px;
 }
 
+/* .hover-span:hover,
+.hover-span:focus {
+  position: relative;
+  color: var(--prime-color);
+} */
+
 .booking {
   height: 100%;
   width: 50%;
@@ -921,9 +938,30 @@ button {
 .booking-form {
 }
 
+.form-list {
+  background-color: var(--hero-color);
+  color: #303030;
+  transition: color var(--trans-slow);
+}
+
+.booking_input:hover,
+.booking_input:focus {
+  color: var(--text-light);
+  border-bottom: 1px solid var(--text-light);
+}
+
 .booking_label {
   display: block;
   width: 270px;
+  background-color: var(--hero-color);
+}
+
+.booking_label:hover,
+.booking_label:focus,
+.booking-form-label:hover,
+.booking-form-label:focus {
+  color: var(--prime-color);
+  transition: color var(--trans-fast);
 }
 
 .booking-form-label {
@@ -936,14 +974,6 @@ button {
   letter-spacing: 0.1em;
 
   color: rgba(157, 164, 189, 0.4);
-}
-.booking_input:hover,
-.booking_label:hover,
-.booking-form-label:hover,
-.booking_input:focus,
-.booking_label:focus,
-.booking-form-label:focus {
-  color: var(--text-light);
 }
 
 .booking_input {
@@ -959,21 +989,23 @@ button {
 .booking_input::placeholder {
   color: rgba(157, 164, 189, 0.2);
   padding-left: 50px;
+  background-color: var(--hero-color);
 }
 
 .form-thumb {
   width: 570px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   margin-top: 40px;
 }
 
 .comments {
-  display: block;
+  /* display: block; */
   width: 570px;
   position: absolute;
-  height: 60px;
+  /* height: 60px; */
 }
 
 .booking-button .form-btn {
@@ -982,7 +1014,8 @@ button {
 
 .form-btn {
   position: relative;
-  top: 105px;
+  top: 85px;
+  /* margin-top: 44px; */
 }
 
 /*                        contacts */
@@ -1169,6 +1202,87 @@ footer {
   transform: translateX(-50%) translateY(-60%);
 }
 
+.modal-title {
+  color: var(--dark-text);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(49.31 / 42);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.modal-title::before {
+  content: "";
+  background-color: var(--dark-text);
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.form-group {
+}
+
+.form_list {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  cursor: pointer;
+}
+
+.form-field:hover,
+.form-message:hover {
+  color: var(--prime-color);
+  transition: color var(--trans-fast);
+}
+
+.form-field::placeholder,
+.form-message::placeholder {
+  color: var(--prime-color);
+}
+
+.form-pyment {
+  cursor: pointer;
+}
+
+.form-input {
+  outline: transparent;
+  border: none;
+  border-bottom: 1px solid var(--dark-text);
+  cursor: pointer;
+}
+
+.form-message {
+  outline: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.user-message {
+  border: none;
+  border-bottom: 1px solid var(--dark-text);
+}
+
+.form-label {
+  border: none;
+  text-transform: lowercase;
+}
+
+.form-btn {
+}
+
+.input-pyment {
+}
+
 .backdrop .is-hidden .modal {
   transform: translate(-50%, -50%);
 }
@@ -1189,9 +1303,18 @@ footer {
   border: 1px solid var(--dark-text);
   background-color: transparent;
   cursor: pointer;
+
+  transition: fill var(--hero-color) var(--trans-fast);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  fill: var(--prime-color);
+  border: 1px solid var(--prime-color);
 }
 
 .form-icon {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
