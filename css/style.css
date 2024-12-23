@@ -1228,9 +1228,11 @@ footer {
 }
 
 .form-group {
+margin-top: 30px;
 }
 
 .form_list {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -1317,4 +1319,8 @@ footer {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+
+.backdrop .booking-button{
+  margin-left: 60px;
 }
